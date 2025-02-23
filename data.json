@@ -1,0 +1,171 @@
+{
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "episodeNumber": 1,
+            "title": "The Target",
+            "description": "Detective Jimmy McNulty's investigation into a drug organization draws the attention of a skeptical judge.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTk2NDc2ODgzN15BMl5BanBnXkFtZTcwNDYwNjYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 2,
+            "title": "The Detail",
+            "description": "McNulty gets assigned to a new unit while Stringer Bell disciplines a dealer for stealing.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTk5NjQwMzg5MV5BMl5BanBnXkFtZTcwNjA3NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 3,
+            "title": "The Buys",
+            "description": "The detail begins surveillance on the Barksdale operation while D'Angelo trains new recruits.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTM3MjQwMzQzMF5BMl5BanBnXkFtZTcwOTE0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 4,
+            "title": "Old Cases",
+            "description": "The detail discovers a connection between a recent homicide and an old case file.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTk0MDQyNjA5M15BMl5BanBnXkFtZTcwNzQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 5,
+            "title": "The Pager",
+            "description": "The detail implements a wiretap on the Barksdale crew's pagers as tensions rise in the towers.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTM3NjQyNDgxN15BMl5BanBnXkFtZTcwODQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 6,
+            "title": "The Wire",
+            "description": "The team finally gets approval for a wiretap but faces technical challenges in implementation.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTQ1NzYwNDQ2MV5BMl5BanBnXkFtZTcwMjQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 7,
+            "title": "One Arrest",
+            "description": "A key arrest threatens to unravel the investigation as political pressures mount.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTkzOTM1NjgyNV5BMl5BanBnXkFtZTcwNDQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 8,
+            "title": "Lessons",
+            "description": "McNulty clashes with superiors while the detail learns the complexities of the drug trade.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTM5MjkwMjE1NF5BMl5BanBnXkFtZTcwMTQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 9,
+            "title": "Game Day",
+            "description": "A major police operation coincides with a crucial Barksdale drug shipment.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTMxMjA1MTY2Ml5BMl5BanBnXkFtZTcwMjQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 10,
+            "title": "The Cost",
+            "description": "The investigation's moral compromises come to light as violence escalates in the streets.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTk0MjA0NTI3N15BMl5BanBnXkFtZTcwMzQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 11,
+            "title": "The Hunt",
+            "description": "A shocking act of violence forces the detail to accelerate their investigation timeline.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTM3NjQ5NzUzN15BMl5BanBnXkFtZTcwNDQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 12,
+            "title": "Cleaning Up",
+            "description": "The detail races to gather evidence before the Barksdale organization can cover its tracks.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTQ1NjQyMjY2Ml5BMl5BanBnXkFtZTcwMTQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 13,
+            "title": "Sentencing",
+            "description": "The season culminates in dramatic courtroom confrontations and unexpected consequences.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTM5OTU1NjE0N15BMl5BanBnXkFtZTcwMzQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          }
+        ]
+      },
+      {
+        "seasonNumber": 2,
+        "episodes": [
+          {
+            "episodeNumber": 1,
+            "title": "The Target",
+            "description": "Detective Jimmy McNulty's investigation into a drug organization draws the attention of a skeptical judge.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTk2NDc2ODgzN15BMl5BanBnXkFtZTcwNDYwNjYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 2,
+            "title": "The Detail",
+            "description": "McNulty gets assigned to a new unit while Stringer Bell disciplines a dealer for stealing.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTk5NjQwMzg5MV5BMl5BanBnXkFtZTcwNjA3NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 3,
+            "title": "The Buys",
+            "description": "The detail begins surveillance on the Barksdale operation while D'Angelo trains new recruits.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTM3MjQwMzQzMF5BMl5BanBnXkFtZTcwOTE0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 4,
+            "title": "Old Cases",
+            "description": "The detail discovers a connection between a recent homicide and an old case file.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTk0MDQyNjA5M15BMl5BanBnXkFtZTcwNzQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 5,
+            "title": "The Pager",
+            "description": "The detail implements a wiretap on the Barksdale crew's pagers as tensions rise in the towers.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTM3NjQyNDgxN15BMl5BanBnXkFtZTcwODQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 6,
+            "title": "The Wire",
+            "description": "The team finally gets approval for a wiretap but faces technical challenges in implementation.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTQ1NzYwNDQ2MV5BMl5BanBnXkFtZTcwMjQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 7,
+            "title": "One Arrest",
+            "description": "A key arrest threatens to unravel the investigation as political pressures mount.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTkzOTM1NjgyNV5BMl5BanBnXkFtZTcwNDQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 8,
+            "title": "Lessons",
+            "description": "McNulty clashes with superiors while the detail learns the complexities of the drug trade.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTM5MjkwMjE1NF5BMl5BanBnXkFtZTcwMTQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 9,
+            "title": "Game Day",
+            "description": "A major police operation coincides with a crucial Barksdale drug shipment.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTMxMjA1MTY2Ml5BMl5BanBnXkFtZTcwMjQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 10,
+            "title": "The Cost",
+            "description": "The investigation's moral compromises come to light as violence escalates in the streets.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTk0MjA0NTI3N15BMl5BanBnXkFtZTcwMzQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 11,
+            "title": "The Hunt",
+            "description": "A shocking act of violence forces the detail to accelerate their investigation timeline.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTM3NjQ5NzUzN15BMl5BanBnXkFtZTcwNDQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 12,
+            "title": "Cleaning Up",
+            "description": "The detail races to gather evidence before the Barksdale organization can cover its tracks.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTQ1NjQyMjY2Ml5BMl5BanBnXkFtZTcwMTQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          },
+          {
+            "episodeNumber": 13,
+            "title": "Sentencing",
+            "description": "The season culminates in dramatic courtroom confrontations and unexpected consequences.",
+            "image": "https://m.media-amazon.com/images/M/MV5BMTM5OTU1NjE0N15BMl5BanBnXkFtZTcwMzQ0NzYyMQ@@._V1_QL75_UX380_CR0,4,380,562_.jpg"
+          }
+        ]
+      }
+
+    ]
+  }

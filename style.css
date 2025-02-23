@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Max Sans', sans-serif;
     background-color: #060212;
+    color: white;
   
 }
 
@@ -64,4 +65,25 @@ padding: 0 20px;
   .hero-logo img {
     width: 200px;
 
+  }
+
+  .hero-context{
+    color: white;
+  }
+  .meta-info{
+    display: flex;
+    font-size: 10px;
+    gap: 10px;
+    margin: 10px 0 
+  
+  }
+
+  .description{
+    font-size: 10px;
+    width: 270px;
+    line-height: 150%;
+  }
+
+  .episodes{
+    width: 100%;
   }
