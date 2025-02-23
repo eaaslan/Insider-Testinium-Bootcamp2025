@@ -1,180 +1,265 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Max Sans', sans-serif;
-    background-color: #060212;
-    color: white;
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Max Sans', sans-serif;
+  color: white;
 }
 
-.navbar{
-    background-color: hsla(0, 0%, 0%, 0.5);
+body {
+  background-color: #060212;
 }
 
-.logo{
-    width: 150px
-}
-.logo img{
-    width: 100%;
+.navbar {
+  background-color: rgba(0,0,0,.7);
+  position: sticky;
+  z-index: 100;
+  width: 100%;
+  top: 0;
 }
 
-.navbar-container{
+.logo {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navbar-container {
 display: flex;
 justify-content : space-between;
 align-items: center;
 margin: 0 auto;
 padding: 0 20px;
 }
-.nav-links{
-    display: flex;
-    margin: 25px;
-    gap: 15px;
-    list-style: none;
-    
+
+.nav-links {
+  display: flex;
+  margin: 18.5px;
+  gap: 15px;
+  list-style: none;
 }
 
 .nav-links a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 .hero {
-   
-    min-height: 80vh;
- 
-    background:
-    
-      linear-gradient(
-        to bottom,
-        rgba(6, 2, 18, 0) 75%,  
-        rgba(6, 2, 18, 1) 89% 
-      ),
-      url("https://m.media-amazon.com/images/S/pv-target-images/761cb721c574d0fa4f6e3334d959fcae13a9d24ab4d0ba65a22e55a7363d9aa3.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-
-  }
-.hero-container{
-    position: absolute;
-    top: 120px;
-    left: 220px;
+  min-height: 80vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(6, 2, 18, 0) 75%,  
+      rgba(6, 2, 18, 1) 89% 
+    ),
+    url("https://static.hbo.com/content/dam/hbodata/series/the-wire/ka/the-wire-ka-1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
 }
-  
-  .hero-logo img {
-    width: 200px;
 
-  }
+.hero-logo img {
+width: 370px;
+}
 
-  .hero-context{
-    color: white;
-  }
-  .meta-info{
+.hero-container {
+width: 50%;
+padding-left: 100px;
+padding-bottom: 100px;
+}
+
+.hero-context {
+width: 100%;
+}
+
+.hero-context * {
+color: white;
+font-size: 18px !important;
+}
+
+.meta-info{
+display: flex;
+font-size: 10px;
+gap: 10px;
+margin: 10px 0 
+
+}
+
+.description{
+font-size: 10px;
+width: 100%;
+line-height: 150%;
+}
+
+.episodes{
+width: 100%;
+}
+
+.episodes-wrapper{
+margin: auto 200px;
+}
+
+.labels{
+display: flex;
+justify-content: space-around;
+margin-bottom: 20px;
+position: relative;
+height: 45px;
+gap: 5px;
+width: 80%;
+z-index: 1;
+}
+
+.labels label{
+cursor: pointer;
+display: block;
+padding: 10px;
+transition: all 0.3s ease; 
+border-radius: 20%;
+z-index: 2;
+}
+
+.labels label:hover{
+background-color: rgba(240, 240, 240, 0.5);
+}
+
+/* #season-one:checked ~ .labels label.season-one,
+#season-two:checked ~ .labels label.season-two,
+#season-three:checked ~ .labels label.season-three,
+#season-four:checked ~ .labels label.season-four,
+#season-five:checked ~ .labels label.season-five{
+background-color: red;
+} */
+
+.slider{
+position: absolute;
+height: 100%;
+width: 20%;
+left: 0;
+bottom: 0;
+z-index: 1;
+background-color: #17a2b8;
+transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+display: none;
+}
+
+#season-two:checked ~ .labels .slider {
+left: 20%;
+}
+#season-three:checked ~ .labels .slider {
+left: 40%;
+}
+#season-four:checked ~ .labels .slider {
+left: 60%;
+}
+#season-five:checked ~ .labels .slider {
+left: 80%;
+}
+
+section .season {
+display: none;
+}
+
+#season-one:checked ~ section .season-one,
+#season-two:checked ~ section .season-two,
+#season-three:checked ~ section .season-three,
+#season-four:checked ~ section .season-four,
+#season-five:checked ~ section .season-five {
+display: block;
+}
+
+.characters {
+display: flex;
+margin-top: 50px;
+}
+
+.characters-img {
+width: 50%
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
     display: flex;
-    font-size: 10px;
-    gap: 10px;
-    margin: 10px 0 
-  
   }
 
-  .description{
-    font-size: 10px;
-    width: 270px;
-    line-height: 150%;
-  }
-
-  .episodes{
-    width: 100%;
-  }
-
-  .episodes-wrapper{
-    margin: auto 200px;
-  }
-  .labels{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    position: relative;
-    height: 45px;
-    gap: 5px;
-    width: 80%;
-    z-index: 1;
-  }
-
-  .labels label{
-    cursor: pointer;
-    display: block;
-    padding: 10px;
-   transition: all 0.3s ease; 
-   border-radius: 20%;
-   z-index: 2;
-  }
-
-  .labels label:hover{
-    background-color: rgba(240, 240, 240, 0.5);
-  }
-
-  /* #season-one:checked ~ .labels label.season-one,
-  #season-two:checked ~ .labels label.season-two,
-  #season-three:checked ~ .labels label.season-three,
-  #season-four:checked ~ .labels label.season-four,
-  #season-five:checked ~ .labels label.season-five{
-    background-color: red;
-  } */
-
-  .slider{
+  .nav-links {
+    display: none;
     position: absolute;
-    height: 100%;
-    width: 20%;
+    top: 100%;
     left: 0;
-    bottom: 0;
-    z-index: 1;
-   background-color: #17a2b8;
-   transition: all 0.3s ease;
+    width: 100%;
+    background-color: rgba(0,0,0,.9);
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
   }
 
-  input[type="radio"]{
+  .nav-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+
+
+  .profile {
     display: none;
   }
 
-  #season-two:checked ~ .labels .slider{
-    left: 20%;
-  }
-  #season-three:checked ~ .labels .slider{
-    left: 40%;
-  }
-  #season-four:checked ~ .labels .slider{
-    left: 60%;
-  }
-  #season-five:checked ~ .labels .slider{
-    left: 80%;
+  .hero-container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
   }
 
-
-  section .season{
-    display:none
+  .hero-logo {
+    display: flex;
+    justify-content: center;
   }
 
-  #season-one:checked ~ section .season-one,
-  #season-two:checked ~ section .season-two,
-  #season-three:checked ~ section .season-three,
-  #season-four:checked ~ section .season-four,
-  #season-five:checked ~ section .season-five
-
-{
-  display: block;
+  .hero-logo img {
+    width: 80%;
+    max-width: 300px;
   }
 
+  .hero-context {
+    padding: 20px 0;
+  }
 
-.characters{
-  display: flex;
-  margin-top: 50px;
+  .meta-info {
+    justify-content: center;
+  }
+
+  .description {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
-.characters-img{
-  width: 50%
-}
-
-
-  
-
