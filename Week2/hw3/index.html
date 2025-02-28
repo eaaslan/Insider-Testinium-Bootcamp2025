@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="timer-container">
+
+    <div class="timer">
+
+        <input type="number" name="time" id="time" max="70" placeholder="Enter second">
+        <p id="display">00:00</p>
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+
+    </div>
+</div>
+
+<script>
+
+    const time=document.querySelector("#time")
+    const display =document.querySelector("#display")
+    const startBtn=document.querySelector("#startBtn")
+    const resetBtn=document.querySelector("#resetBtn")
+    const stopBtn = document.querySelector("#stopBtn")
+
+    let interval;
+    let currentTime;
+    let isPaused;
+
+
+    const startTimer=()=>{
+
+        if(!isPaused){ currentTime=time.value;}
+
+        interval=setInterval(()=>{
+            currentTime--;
+            updateInputs(currentTime);
+        },1000)
+    }
+
+    const updateInputs=(seconds)=>{
+        const minutes=Math.floor(seconds/60);
+        const remainingSeconds=seconds%60;
+
+        display.textContent= `${minutes.toString().padStart(2,'0')}:${remainingSeconds.toString().padStart(2,'0')}`
+    }
+
+    const resetTimer=()=>{
+        clearInterval(interval)
+        display.textContent='00:00'
+        time.value=""
+        interval=null;
+        currentTime=0;
+
+    }
+
+    const stopTimer=()=>{
+        clearInterval(interval)
+        isPaused=true;
+    }
+
+    startBtn.addEventListener("click",startTimer)
+    stopBtn.addEventListener("click",stopTimer)
+    resetBtn.addEventListener("click",resetTimer)
+
+</script>
+</body>
+</html>
