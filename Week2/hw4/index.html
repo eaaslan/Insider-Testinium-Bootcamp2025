@@ -10,33 +10,7 @@
     <div class="todo-container">
       <div class="todo-app">
         <h2>To Do List</h2>
-        <form class="task-form">
-          <div class="task-importance">
-            <input
-              type="radio"
-              id="low"
-              name="task-importance-level"
-              value="düşük"
-              required
-            />
-            <label for="low">Düşük</label><br />
-            <input
-              type="radio"
-              id="medium"
-              name="task-importance-level"
-              value="orta"
-              required
-            />
-            <label for="medium">Orta</label><br />
-            <input
-              type="radio"
-              id="high"
-              name="task-importance-level"
-              value="yüksek"
-              required
-            />
-            <label for="high">Yüksek</label>
-          </div>
+        <form class="task-form" onsubmit="addTask()">
           <div class="row">
             <input
               required
@@ -45,14 +19,43 @@
               placeholder="Task name"
             />
 
-            <button onclick="addTask()">Add</button>
+            <input type="submit" value="Submit" />
+          </div>
+          <div class="task-importance">
+            <div>
+              <input
+                type="radio"
+                id="low"
+                name="task-importance-level"
+                value="3"
+                required
+              />
+              <label for="low">Düşük</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="medium"
+                name="task-importance-level"
+                value="2"
+                required
+              />
+              <label for="medium">Orta</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="high"
+                name="task-importance-level"
+                value="1"
+                required
+              />
+              <label for="high">Yüksek</label>
+            </div>
           </div>
         </form>
 
-        <ul id="list-container">
-          <li class="checked">Deneme</li>
-          <li>Deneme</li>
-        </ul>
+        <ul id="list-container"></ul>
       </div>
 
       <script src="script.js"></script>
