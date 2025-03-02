@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="todo-container">
+      <div class="todo-app">
+        <h2>To Do List</h2>
+        <form class="task-form">
+          <div class="task-importance">
+            <input
+              type="radio"
+              id="low"
+              name="task-importance-level"
+              value="düşük"
+              required
+            />
+            <label for="low">Düşük</label><br />
+            <input
+              type="radio"
+              id="medium"
+              name="task-importance-level"
+              value="orta"
+              required
+            />
+            <label for="medium">Orta</label><br />
+            <input
+              type="radio"
+              id="high"
+              name="task-importance-level"
+              value="yüksek"
+              required
+            />
+            <label for="high">Yüksek</label>
+          </div>
+          <div class="row">
+            <input
+              required
+              type="text"
+              id="task-name"
+              placeholder="Task name"
+            />
 
-        <div class="todo-app">
-                <h2>To Do List</h2>
+            <button onclick="addTask()">Add</button>
+          </div>
+        </form>
 
-                <div class="row">
-                    <input type="text" id="input-box" placeholder="Add your task">
-                    <button onclick="addTask()">Add</button>
-                </div>
+        <ul id="list-container">
+          <li class="checked">Deneme</li>
+          <li>Deneme</li>
+        </ul>
+      </div>
 
-                <ul id="list-container">
-                    <li class="checked">Deneme</li>
-                    <li>Deneme</li>
-
-                </ul>
-
-
-        </div>
-
-
-<script src="script.js"></script>
+      <script src="script.js"></script>
     </div>
-
-
-</body>
+  </body>
 </html>
