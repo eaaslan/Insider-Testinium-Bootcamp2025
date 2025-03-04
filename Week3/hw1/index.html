@@ -26,7 +26,7 @@
     </table>
 
     <script>
-      if (!localStorage.getItem("students")) {
+      if (!localStorage.getItem("students") ||localStorage.getItem("students")==="[]") {
         const students = [
           { id: 1, name: "enes", class: "6" },
           { id: 2, name: "bugra", class: "4" },
@@ -43,13 +43,26 @@
                  <td> ${student.id}</td>
                  <td> ${student.name}</td>
                  <td> ${student.class}</td>
-                 
+                 <td> <button class="delete" data-id="${student.id}">Delete</button></td>
                  </tr>
                `;
           })
           .join("");
         $("#studentTable").html(rows);
       };
+      const deleteStudent=(id)=>{
+        const localStoragestudents=JSON.parse(localStorage.getItem("students"))
+        const updatedStorageStudents=localStoragestudents.filter(student=> student.id!==id)
+        localStorage.setItem("students",JSON.stringify(updatedStorageStudents))
+        displayStudents()     
+      }
+
+      $("#studentTable").on("click",".delete",function(){
+        const id=$(this).data("id")
+        deleteStudent(id)
+      });
+
+
 
       displayStudents();
       $("form").submit(function (event) {
