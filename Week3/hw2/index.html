@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Posts</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-      
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-        .loading {
-            text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-            border: 1px solid #ccc;
-            margin-top: 20px;
-        }
+      .loading {
+        text-align: center;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+      }
 
-        #postList {
-            list-style-type: none;
-            padding: 0;
-        }
+      #postList {
+        list-style-type: none;
+        padding: 0;
+      }
 
-        .card{
-            background-color: #f9f9f9;
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
+      .card {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Posts</h1>
-    <ul id="postList"></ul>
+    <div class="postList"></div>
     <div class="loading">Loading...</div>
 
-    <script src="script.js">
-      
-    </script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
