@@ -1,15 +1,16 @@
+$(()=>{
 
 let currentPage=0;
 const limit=7
 let isLoading=false;
-let cachedPosts={}
+// let cachedPosts={}
 
 
-function loadMore()
-{
-   alert("More loaded");
-   $(window).bind('scroll');
- }
+// function loadMore()
+// {
+//    alert("More loaded");
+//    $(window).bind('scroll');
+//  }
 
 $(window).scroll(function() {
    if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
@@ -58,3 +59,4 @@ const loadPost=()=>{
 
 loadPost();
 
+})
