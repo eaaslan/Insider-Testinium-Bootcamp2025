@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+      }
+      .red-box {
+        background-color: red;
+      }
+      .green-box {
+        background-color: green;
+      }
+      .blue-box {
+        background-color: blue;
+      }
+
+      .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+      .lightbox-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: aqua;
+        padding: 20px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <div id="content">
+      <div class="red-box box"></div>
+      <div class="green-box box"></div>
+      <div class="blue-box box"></div>
+    </div>
+
+    <div class="lightbox">
+      <div class="lightbox-content">
+        <h2>lightbox</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est
+          ullam reprehenderit sint commodi possimus sit facere dolores aut
+          sapiente.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
