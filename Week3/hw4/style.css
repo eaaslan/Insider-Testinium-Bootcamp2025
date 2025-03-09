@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem; /* for smooth scroll TODO check later */
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+:root {
+  --main-color: red;
+  --text-color: black;
+  --bg-color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+section {
+  padding: 4rem;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.logo {
+  font-size: 1.1rem;
+  color: var(--main-color);
+  font-weight: 400;
+}
+#cart-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 400px;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 4;
+}
+
+.cart.active {
+  right: 0;
+}
+.cart-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.shop {
+  margin-top: 2rem;
+}
+
+/* Shop content */
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product-box {
+  position: relative;
+}
+.product-box:hover {
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  transition: 0.4s;
+}
+
+.card-price {
+  font-weight: 500;
+}
+
+.add-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  background-color: var(--main-color);
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart-img img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.cart-product-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.cart-quantity {
+  border: 1px solid var(--text-color);
+  width: 2.3rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.cart-remove {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  gap: 5px;
+  padding-top: 5px;
+  border-top: 1px solid var(--text-color);
+}
+
+.total-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.total-price {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.buy-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+.buy-btn:hover {
+  background-color: var(--main-color);
+}
+
+#close-cart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
