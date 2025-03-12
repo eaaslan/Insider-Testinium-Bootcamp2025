@@ -111,7 +111,7 @@ $(()=>{
             
             card.remove();
             
-            // If no users left, refresh the data
+           // refresh the data if there is no user left
             if (updatedUsers.length === 0) {
                 await displayUsers();
             }
@@ -119,67 +119,65 @@ $(()=>{
     }
 
 
-      const style = `
-      .card {
-        
-          margin: 10px;
-          border: 1px solid #ddd;
-          border-radius: 8px;
-          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-          transition: transform 0.2s;
-      }
-      
-      .card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      }
-      
-      .card-body {
-          padding: 20px;
-          position: relative;
-      }
-      
-      .card-title {
-          color: #333;
-          font-size: 1.25rem;
-          margin-bottom: 10px;
-      }
-      
-      .card-text {
-          color: #666;
-          margin-bottom: 8px;
-      }
-      
-      .ins-api-users {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-          gap: 20px;
-          padding: 20px;
-          max-width: 1200px;
-          margin: 0 auto;
-      }
-          .delete-btn {
-            background: none;
-            border: none;
-            color: #dc3545;
-            cursor: pointer;
-            padding: 8px;
-            transition: color 0.3s;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-        
-        .delete-btn:hover {
-            color: #c82333;
-        }
-        
-        .delete-btn i {
-            font-size: 1.2rem;
-        }
+    const style = `
+    .card {
+        margin: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .card-body {
+        padding: 20px;
+        position: relative;
+    }
+
+    .card-title {
+        color: #333;
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        color: #666;
+        margin-bottom: 8px;
+    }
+
+    .ins-api-users {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .delete-btn {
+        background: none;
+        border: none;
+        color: #dc3545;
+        cursor: pointer;
+        padding: 8px;
+        transition: color 0.3s;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .delete-btn:hover {
+        color: #c82333;
+    }
+    
+    .delete-btn i {
+        font-size: 1.2rem;
+    }
     `;
 
-    // Add styles to head
     $('<style>').text(style).appendTo('head');
 
  
