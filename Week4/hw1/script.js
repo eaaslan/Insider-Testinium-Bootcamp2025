@@ -7,7 +7,7 @@ function loadjQuery() {
             const script = document.createElement('script');
             script.src = 'https://code.jquery.com/jquery-3.7.1.min.js';
             script.onload = () => resolve(window.jQuery);
-            script.onerror = () => reject(new Error('jQuery yüklenemedi'));
+            script.onerror = () => reject(new Error('jQuery could not be loaded'));
             document.head.appendChild(script);
         }
     });
@@ -75,10 +75,21 @@ window.customLocalStorage=
 loadjQuery()
 .then(()=>{
     $(()=>{
+
+        const showRetrieveButton = () => {
+            $(".ins-api-users").html(`
+                <button class="retrieveAllUser" type="button">Retrieve all users</button>
+            `);
+            
+            $(".retrieveAllUser").click(() => {
+                customLocalStorage.removeItem("ins-api-users");
+                displayUsers();
+            });
+        };
+
         const getData =async()=> {
              const users= customLocalStorage.getItem("ins-api-users");
-             if (users &&users.length > 0){
-                 console.log("from cache")
+             if (users){
                  return users;
              }else{
              const url = " https://jsonplaceholder.typicode.com/users";
@@ -101,6 +112,11 @@ loadjQuery()
              const users = await getData();
              console.log(users)
      
+             if (!users || users.length === 0) {
+                showRetrieveButton();
+                return;
+            }
+
              const html = users.map((users) => {
                  return `
                  <div class="card" data-id="${users.id}">
@@ -125,11 +141,13 @@ loadjQuery()
                  customLocalStorage.setItem("ins-api-users", updatedUsers);
                  
                  card.remove();
-                 
-                // refresh the data if there is no user left
+              
+                
                  if (updatedUsers.length === 0) {
-                     await displayUsers();
-                 }
+                    showRetrieveButton();
+                }
+                
+            
              });
          }
      
@@ -191,6 +209,27 @@ loadjQuery()
          .delete-btn i {
              font-size: 1.2rem;
          }
+
+         .retrieveAllUser {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+         .retrieveAllUser:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+    
          `;
      
          $('<style>').text(style).appendTo('head');
