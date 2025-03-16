@@ -1,4 +1,15 @@
 //reference: https://javascript.plainenglish.io/implement-localstorage-with-expiry-time-a2af662f7705
+(function() {
+    if (!document.querySelector('.ins-api-users')) {
+        console.error('Required div with class "ins-api-users" not found');
+        return;
+    }
+    if (!document.querySelector('link[href*="font-awesome"]')) {
+        const fontAwesome = document.createElement('link');
+        fontAwesome.rel = 'stylesheet';
+        fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
+        document.head.appendChild(fontAwesome);
+    }
 function loadjQuery() {
     return new Promise((resolve, reject) => {
         if (window.jQuery) {
@@ -363,3 +374,4 @@ loadjQuery()
     console.error('Error:', error);
 });
 
+})();
