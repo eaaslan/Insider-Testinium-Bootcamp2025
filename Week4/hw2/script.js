@@ -1,7 +1,9 @@
 //reference: https://javascript.plainenglish.io/implement-localstorage-with-expiry-time-a2af662f7705
+
+const appendLocation = '.ins-api-users';
 (function() {
-    if (!document.querySelector('.ins-api-users')) {
-        console.error('Required div with class "ins-api-users" not found');
+    if (!document.querySelector(appendLocation)) {
+        console.error(`Required div with class "${appendLocation}" not found`);
         return;
     }
     if (!document.querySelector('link[href*="font-awesome"]')) {
@@ -107,7 +109,7 @@ loadjQuery()
             }); }
 
         const showRetrieveButton = () => {
-            $(".ins-api-users").html(`
+            $(appendLocation).html(`
                 <h1 class="user-list-header">User List</h1>
                 <div class="buttons">
                 <button class="btn retrieveAllUser" type="button">Retrieve all users</button>
@@ -187,7 +189,7 @@ loadjQuery()
                    }).join("")}
                </div>`;
             
-            $(".ins-api-users").html(html);
+            $(appendLocation).html(html);
             addObserver()
      
              $(".delete-btn").click(async function () {
@@ -210,7 +212,7 @@ loadjQuery()
                 font-family: "Nunito", sans-serif;
             }
 
-           .ins-api-users {
+           ${appendLocation} {
                padding: 20px;
                max-width: 1400px;
                margin: 0 auto;
